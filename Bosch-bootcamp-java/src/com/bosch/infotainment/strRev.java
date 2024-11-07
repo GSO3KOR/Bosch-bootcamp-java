@@ -1,3 +1,5 @@
+package com.bosch.infotainment;
+
 public class strRev {
     public static void main(String[] args) {
         String str = "Welcome to Java Training";

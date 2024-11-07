@@ -1,3 +1,5 @@
+package com.bosch.infotainment;
+
 import java.util.Scanner;
 
 public class TempConverter {
@@ -18,14 +20,14 @@ public class TempConverter {
                     System.out.print("Enter temperature in Celsius: ");
                     float tCelsius = scanner.nextFloat();
                     float tFahrenheit = (tCelsius * (9.0f / 5)) + 32;
-                    System.out.println("Temperature in Fahrenheit: " + tFahrenheit);
+                    System.out.println("com.bosch.infotainment.SamWorld.Temperature in Fahrenheit: " + tFahrenheit);
                     break;
 
                 case 2:
                     System.out.print("Enter temperature in Fahrenheit: ");
                     tFahrenheit = scanner.nextFloat();
                     tCelsius = (tFahrenheit - 32) * (5.0f / 9);
-                    System.out.println("Temperature in Celsius: " + tCelsius);
+                    System.out.println("com.bosch.infotainment.SamWorld.Temperature in Celsius: " + tCelsius);
                     break;
 
                 case 3:
