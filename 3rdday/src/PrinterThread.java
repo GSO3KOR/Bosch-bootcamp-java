@@ -23,7 +23,7 @@ class PrinterThread extends Thread {
     }
 
     public static void main(String[] args) {
-        // Create threads with different names
+
         PrinterThread thread1 = new PrinterThread("1");
         PrinterThread thread2 = new PrinterThread("2");
 
