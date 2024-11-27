@@ -1,25 +1,28 @@
-package com.labs.java.io;
-import java.io.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
-class Product implements Serializable {
-    private static final long serialVersionUID = 1L;
-    private int id;
-    private String name;
-    private double price;
+enum ProductType {
+    Mobiles, Laptops, Furnitures, Stationary
+}
 
-    // Constructor
-    public Product(int id, String name, double price) {
+class Product {
+    int id;
+    ProductType category;
+    String description;
+    double price;
+    boolean active;
+
+    public Product(int id, ProductType category, String description, double price, boolean active) {
         this.id = id;
-        this.name = name;
+        this.category = category;
+        this.description = description;
         this.price = price;
+        this.active = active;
     }
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return "Product [ID=" + id + ", Category=" + category + ", Description=" + description
+                + ", Price=" + price + ", Active=" + active + "]";
     }
 }
